@@ -54,3 +54,5 @@ alter table Persons add check(Birthday < getdate());
 
 alter table Persons add NgayBatDauLL date;
 --8
+create index IX_HoTen on Persons(Name);
+create index IX_SoDienThoai on Contacts(Tel);
